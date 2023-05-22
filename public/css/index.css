@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #2b2b2b;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    height: 30vh;
+    background-image: url('../img/banner1.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+header .main-title {
+    font-family: 'Patrick Hand', cursive;
+    color: snow;
+    font-size: 5rem;
+    text-align: left;
+
+}
+
+#characters {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.character {
+    flex: 0 0 250px;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.character div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.character input {
+    display: none;
+}
+
+.alive {
+    width: 14px;
+    height: 14px;
+    background-color: #297a18;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.dead {
+    width: 14px;
+    height: 14px;
+    background-color: #c81f1f;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.unknown {
+    width: 14px;
+    height: 14px;
+    background-color: #949494;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+
+#character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.data span{
+    font-weight: bold;
+}
+
+/* Button style*/
+
+#myButton {
+    font-family: 'Patrick Hand', cursive;
+    background-color: #ff80bf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  #myButton:hover {
+    background-color: #949494;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+#myButton {
+    /* Agrega estilos adicionales para hacerlo "divertido" */
+     /* Por ejemplo, cambia el fondo y el color de texto  */
+    background-color: #263546;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+
+
+footer {
+    display: grid;
+    place-items: center;
+    padding: 4rem;
+    font-size: 1.2rem;
+    background-color: #263546;
+    color: snow;
+    margin-top: 20px;
+}
